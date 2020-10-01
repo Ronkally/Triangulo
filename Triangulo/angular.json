@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Triangulo"
+    }
+  },
+  "defaultProject": "Triangulo",
+  "cli": {
+    "analytics": false
+  }
 }
