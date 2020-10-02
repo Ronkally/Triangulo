@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {triangulo} from '../../../models/triangulo.'
 
 @Component({
   selector: 'app-input',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InputComponent implements OnInit {
 
-  constructor() { }
+  title = 'Triangulo';
+  public triangulo: triangulo;
+  result: boolean = false;
+  resultMessage: string = "";
 
+  constructor() { 
+    this.triangulo = new triangulo(null, null, null);
+    
+  }
   ngOnInit(): void {
   }
 
+  onSubmit(form){
+    this.result = true;
+    this.resultMessage = this.triangulo.ReturnTriangleType();
+    console.log(this.resultMessage);
+    
+  }
 }
