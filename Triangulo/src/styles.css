@@ -166,9 +166,9 @@ nav ul li a:focus
 
 
 
-  /* Body Lado Izquierdo */
+  /* Body Lado Derecho */
 
-.titulo
+/* .titulo
 {
     font-family: "ork";
     font-size: 5vh;
@@ -182,7 +182,7 @@ nav ul li a:focus
 .inputrow
 {
   width: 70%;
-}
+}  */
 
 
   
@@ -243,6 +243,8 @@ nav ul li a:focus
       margin-left: 1.2rem;
       margin-bottom: 20px;
     }
+
+    
 }  
   
 

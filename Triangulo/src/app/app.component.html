@@ -2,7 +2,7 @@
   <!--   Lado Izquierdo-->  
   <div class="left">
     <nav class="mynav">
-      <a class="boton" href="#" target="_blank"> 
+      <a class="boton" [routerLink]="['']" [routerLinkActive]="['actived']"> 
         <ul class="logo">
           <li><img class="icono" src="./../assets/img/logo2.png" width="50" height="50"></li>
           <li><strong class="letters">EQUIPO 3</strong></li>
@@ -35,8 +35,8 @@
   <div class="right">
     <nav class="mynavbar">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About US</a></li>
+        <li><a [routerLink]="['']" [routerLinkActive]="['actived']">Home</a></li>
+        <li><a [routerLink]="['/sobre']" [routerLinkActive]="['actived']">About US</a></li>
       </ul>
     </nav>
 
@@ -57,6 +57,11 @@
         </div>
       </div>
   </form>
+    <section id="content">
+      <router-outlet></router-outlet>
+    </section>
+    
+
   </div>
 </div>
 
