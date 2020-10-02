@@ -1,0 +1,15 @@
+.titulo
+{
+    font-family: "ork";
+    font-size: 5vh;
+    position: absolute;
+    margin-top: 15px;
+    top: 6%;
+    text-align: center;
+    width: 100%;
+}
+
+.inputrow
+{
+  width: 70%;
+}

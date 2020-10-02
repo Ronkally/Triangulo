@@ -2,7 +2,7 @@
   <!--   Lado Izquierdo-->  
   <div class="left">
     <nav class="mynav">
-      <a class="boton" href="#" target="_blank"> 
+      <a class="boton" [routerLink]="['']" [routerLinkActive]="['actived']"> 
         <ul class="logo">
           <li><img class="icono" src="./../assets/img/logo2.png" width="50" height="50"></li>
           <li><strong class="letters">EQUIPO 3</strong></li>
@@ -35,28 +35,18 @@
   <div class="right">
     <nav class="mynavbar">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About US</a></li>
+        <li><a [routerLink]="['']" [routerLinkActive]="['actived']">Home</a></li>
+        <li><a [routerLink]="['/sobre']" [routerLinkActive]="['actived']">About US</a></li>
       </ul>
     </nav>
 
-    <!-- Body Lado Derecho -->
-    <form #projectForm="ngForm" (ngSubmit)="onSubmit(projectForm)">
-      <div class="titulo">    
-        Ingresa las medidas del triángulo
-        <div class="myinput row inputrow">
-          <div class="input-field col s12 inputs">
-            <input [(ngModel)]="triangulo.ladoA" name="ladoA" placeholder="Lado A"  type="number" class="validate" min="1" oninput="validity.valid||(value='');" required>
-            <input [(ngModel)]="triangulo.ladoB" name="ladoB" placeholder="Lado B"  type="number" class="validate" min="1" oninput="validity.valid||(value='');" required>
-            <input [(ngModel)]="triangulo.ladoC" name="ladoC" placeholder="Lado C"  type="number" class="validate" min="1" oninput="validity.valid||(value='');" required>
-            <input type="submit" value="Continuar" class="waves-effect waves-light btn" [disabled]="!projectForm.form.valid"/>
-          </div>
-        </div>
-        <div  *ngIf="result">
-          <h5 style="color:#c62828;" >El triángulo es {{resultMessage}}</h5>
-        </div>
-      </div>
-  </form>
+  
+    
+    <section id="content">
+      <router-outlet></router-outlet>
+    </section>
+    
+
   </div>
 </div>
 
