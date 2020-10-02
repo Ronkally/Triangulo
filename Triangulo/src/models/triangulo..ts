@@ -5,11 +5,22 @@ export class triangulo{
         public ladoC: number,
     ){}
     ReturnTriangleType() {
+        if(!this.CheckIfTriangle())
+            return "Por favor ingrese dimensiones válidas de un triángulo"
         if(this.ladoA == this.ladoB && this.ladoB == this.ladoC && this.ladoC == this.ladoA)
-            return "Equilátero"
+            return "El triángulo es Equilátero"
         if(this.ladoA != this.ladoB && this.ladoB != this.ladoC && this.ladoC != this.ladoA)
-            return "Escaleno"
-        return "Isósceles"
+            return "El triángulo es Escaleno"
+        return "El triángulo es Isósceles"
+    }
+    CheckIfTriangle(){
+        if((this.ladoA + this.ladoB) <= this.ladoC)
+            return false
+        if((this.ladoA + this.ladoC) <= this.ladoB)
+            return false
+        if((this.ladoB + this.ladoC) <= this.ladoA)
+            return false
+        return true
     }
 }
 

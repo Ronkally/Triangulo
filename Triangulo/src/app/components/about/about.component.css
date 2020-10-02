@@ -23,8 +23,10 @@
 .image
 {
     position: absolute;
+    display: flex;
+    flex-wrap: wrap;
     height: 200px;
-    width: 800px;
+    width: 100%;
     margin: -100px 0 0 -200px;
     top: 45%;
     left: 35%
@@ -38,11 +40,14 @@ img
     height: 128px;
 }
 
+
+
 figure {
     text-align: center;
     font-size: smaller;
     text-indent: 0;
     margin: 0.5em;
+    margin-bottom: 1.5rem;
     padding: 0.5em;
     width: 128px;
     height: 128px;
