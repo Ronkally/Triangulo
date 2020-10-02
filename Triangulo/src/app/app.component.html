@@ -41,18 +41,22 @@
     </nav>
 
     <!-- Body Lado Derecho -->
-    <div class="titulo">    
-      Ingresa las Medidas
-      <div class="myinput row inputrow">
-        <div class="input-field col s12 inputs">
-          <input placeholder="Lado A"  type="number" class="validate">
-          <input placeholder="Lado B"  type="number" class="validate">
-          <input placeholder="Lado C"  type="number" class="validate">
-          <a class="waves-effect waves-light btn">Continuar</a>
+    <form #projectForm="ngForm" (ngSubmit)="onSubmit(projectForm)">
+      <div class="titulo">    
+        Ingresa las medidas del triángulo
+        <div class="myinput row inputrow">
+          <div class="input-field col s12 inputs">
+            <input [(ngModel)]="triangulo.ladoA" name="ladoA" placeholder="Lado A"  type="number" class="validate" min="1" oninput="validity.valid||(value='');" required>
+            <input [(ngModel)]="triangulo.ladoB" name="ladoB" placeholder="Lado B"  type="number" class="validate" min="1" oninput="validity.valid||(value='');" required>
+            <input [(ngModel)]="triangulo.ladoC" name="ladoC" placeholder="Lado C"  type="number" class="validate" min="1" oninput="validity.valid||(value='');" required>
+            <input type="submit" value="Continuar" class="waves-effect waves-light btn" [disabled]="!projectForm.form.valid"/>
+          </div>
+        </div>
+        <div  *ngIf="result">
+          <h5 style="color:#c62828;" >El triángulo es {{resultMessage}}</h5>
         </div>
       </div>
-    </div>
-
+  </form>
   </div>
 </div>
 

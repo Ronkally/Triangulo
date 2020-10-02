@@ -23,6 +23,17 @@ body
     margin: auto 0px;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 
 .clearfix
 {
@@ -189,7 +200,7 @@ nav ul li a:focus
     }
     
     .left{
-      margin-top: 320px;
+      margin-top: 380px;
       overflow: hidden;
       height: 100%;
       width: 100%;
