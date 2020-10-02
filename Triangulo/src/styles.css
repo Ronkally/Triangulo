@@ -18,11 +18,11 @@
 }
 
 /* Estitlos Generales */
-
 body
 {
     margin: auto 0px;
 }
+
 
 .clearfix
 {
@@ -35,8 +35,8 @@ body
 {
     background-color: #383838;    
     width: 50%;
-    position: absolute;
-    height: 100%;
+    height: 100vh;
+    overflow: auto;
     background-size: cover;
     margin: auto 0px;
  }
@@ -87,19 +87,19 @@ display: inline-block;
   text-transform: uppercase;
   margin-top: 20px;
   float: left;
-  margin-left: 40px;
+  margin-left: 1.5rem;
 }
 
 .text
 {
   color: whitesmoke;
-  font-size: larger;
+  font-size: 1vw;
   font-weight: 800;
   text-transform: uppercase;
   float: left;
   margin-top: 0px;
+  margin-left: 1.5rem;
   width: 90%;
-  margin-left: 40px;
   text-align: justify;
 }
 
@@ -160,22 +160,77 @@ nav ul li a:focus
 .titulo
 {
     font-family: "ork";
-    font-size: xx-large;
+    font-size: 5vh;
     position: absolute;
+    margin-top: 15px;
     top: 6%;
-    left: 20%;
     text-align: center;
+    width: 100%;
 }
+
+.inputrow
+{
+  width: 70%;
+}
+
+
   
 @media (max-width: 600px) 
 {
+    .container-flex
+    {
+      display: flex;
+      flex-wrap: wrap-reverse;
+      flex-direction: column;
+    }
+
+    .left, .right{
+      width: 100%;
+    }
+    
+    .left{
+      margin-top: 320px;
+      overflow: hidden;
+      height: 100%;
+      width: 100%;
+      padding-bottom: 20px;
+    }
+
+    .right{
+      
+      overflow: hidden;
+      height: 100%;
+      width: 100%;
+    }
+    
+    .block
+    {
+      float: left;
+      
+    }
+    
     .titulo
     {
       font-size: large;
       position: absolute;
-      top: 5%;
-      left: 10%;
+      top: unset;
+      left: unset;
       text-align: center;    
+    }
+
+    .type
+    {
+      color: #26A69A;
+      float: none;
+      margin-left: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .text
+    {
+      font-size: small;
+      margin-left: 1.2rem;
+      margin-bottom: 20px;
     }
 }  
   
