@@ -201,7 +201,7 @@ nav ul li a:focus
     }
     
     .left{
-      margin-top: 28rem;
+      margin-top: 35rem;
       overflow: hidden;
       height: 100%;
       width: 100%;
@@ -213,6 +213,9 @@ nav ul li a:focus
       overflow: hidden;
       height: 100%;
       width: 100%;
+    }
+    figcaption{
+      margin-bottom: 2rem;
     }
     
     .block
@@ -243,9 +246,10 @@ nav ul li a:focus
       font-size: small;
       margin-left: 1.2rem;
       margin-bottom: 20px;
+      
     }
 
-    body
+    body, .left
     {
       overflow: unset;
     }

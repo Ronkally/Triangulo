@@ -66,8 +66,13 @@ figure {
 
     .image
     {
-      margin-top: 8rem;
+      margin-top: 27vh;
       margin-right: .8rem;
+    }
+
+    .image > figure
+    {
+      margin-bottom: 6vh;
     }
     
     img
