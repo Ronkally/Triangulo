@@ -66,8 +66,8 @@ figure {
 
     .image
     {
+      position: unset;
       margin-top: 27vh;
-      margin-right: .8rem;
     }
 
     .image > figure
