@@ -25,11 +25,8 @@
     position: absolute;
     display: flex;
     flex-wrap: wrap;
-    height: 200px;
-    width: 100%;
-    margin: -100px 0 0 -200px;
-    top: 45%;
-    left: 35%
+    justify-content: center;
+    margin-top: 10rem;
 }
 
 img
@@ -69,12 +66,8 @@ figure {
 
     .image
     {
-    position: absolute;
-    height: 200px;
-    width: 400px;
-    margin: -100px 0 0 -200px;
-    top: 45%;
-    left: 50%
+      margin-top: 8rem;
+      margin-right: .8rem;
     }
     
     img
