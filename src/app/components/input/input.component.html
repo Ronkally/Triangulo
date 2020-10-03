@@ -3,9 +3,9 @@
     Ingresa las medidas del triángulo
     <div class="myinput row inputrow">
       <div class="input-field col s12 inputs">
-        <input [(ngModel)]="triangulo.ladoA" name="ladoA" placeholder="Lado A"  type="number" class="validate" min="1" oninput="validity.valid||(value='');" required>
-        <input [(ngModel)]="triangulo.ladoB" name="ladoB" placeholder="Lado B"  type="number" class="validate" min="1" oninput="validity.valid||(value='');" required>
-        <input [(ngModel)]="triangulo.ladoC" name="ladoC" placeholder="Lado C"  type="number" class="validate" min="1" oninput="validity.valid||(value='');" required>
+        <input [(ngModel)]="triangulo.ladoA" name="ladoA"  step="any" placeholder="Lado A"  type="number" class="validate" min="1" oninput="validity.valid||(value='');" required>
+        <input [(ngModel)]="triangulo.ladoB" name="ladoB" step="any" placeholder="Lado B"  type="number" class="validate" min="1" oninput="validity.valid||(value='');" required>
+        <input [(ngModel)]="triangulo.ladoC" name="ladoC" step="any" placeholder="Lado C"  type="number" class="validate" min="1" oninput="validity.valid||(value='');" required>
         <input type="submit" value="Continuar" class="waves-effect waves-light btn" [disabled]="!projectForm.form.valid"/>
       </div>
     </div>
